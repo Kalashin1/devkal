@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="theme-color" content="#333333">
+
+	%sapper.base%
+
+	<link rel="stylesheet" href="global.css">
+	<link rel="stylesheet" href="font-awesome/all.min.css">
+	<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+
+	<!-- SEO -->
+	<meta name="description" content="150 words">
+	<meta name="author" content="uipasta">
+	<meta name="url" content="http://www.yourdomainname.com">
+	<meta name="copyright" content="company name">
+	<meta name="robots" content="index,follow">
+	
+	
+	<title>DevBlog - Personal Blog Template</title>
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="/images/favicon/apple-touch-icon.png">
+	
+	<!-- All CSS Plugins -->
+	<link rel="stylesheet" type="text/css" href="/css/plugin.css">
+	
+	<!-- Main CSS Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	
+	<!-- Google Web Fonts  -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
+	
+	<!-- Template Main CSS File -->
+	<link href="/css/style.css" rel="stylesheet">
+	<style>
+		@font-face {
+			font-family: 'andika';
+			src: url(fonts/AndikaNewBasic-Regular.ttf);
+			font-weight: 500
+		}
+		html{
+			scroll-behavior: smooth;
+			background: #f2f2f2
+		}
+	</style>
+
+	<!-- Sapper creates a <script> tag containing `src/client.js`
+	     and anything else it needs to hydrate the app and
+	     initialise the router -->
+	%sapper.scripts%
+
+	<!-- Sapper generates a <style> tag containing critical CSS
+	     for the current page. CSS for the rest of the app is
+	     lazily loaded when it precaches secondary pages -->
+	%sapper.styles%
+
+	<!-- This contains the contents of the <svelte:head> component, if
+	     the current page has one -->
+	%sapper.head%
+</head>
+<body>
+	<!-- The application will be rendered inside this element,
+	     because `src/client.js` references it -->
+	<div id="sapper">%sapper.html%</div>
+	<script src="/font-awesome/all.min.js"></script>
+	<a href="#" class="scroll-to-top">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" fill="green" height="24" viewBox="0 0 24 24">
+			<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+		</svg>
+	</a>
+    <!-- Back to Top End -->
+    
+    
+    <!-- All Javascript Plugins  -->
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/plugin.js"></script>
+	
+	<!-- Main Javascript File  -->
+	<script type="text/javascript" src="/js/scripts.js"></script>
+
+    
+   </body>
+ </html>
