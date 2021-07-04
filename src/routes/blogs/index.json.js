@@ -1,11 +1,9 @@
 import fetch from "node-fetch";
 
 export async function get(req, res, next) {
-  console.log(process.env.DEV_API_KEY)
-  const _res = await fetch('https://dev.to/api/articles?username=kalashin1&per_page=6')
+  const _res = await fetch(`https://dev.to/api/articles?username=kalashin1&per_page=15`)
   if (_res.ok) {
     let posts = await _res.json()
-    console.log(_res.status)
 
     posts = posts.map((post) => ({
     title: post.title,
@@ -13,7 +11,7 @@ export async function get(req, res, next) {
     createdAt: post.created_at,
     publishedAt: post.published_at,
     id: post.id,
-    tas: post.tags,
+    tags: post.tags,
     tagList: post.tag_list,
     description: post.description,
     readingTime: post.reading_time_minutes,

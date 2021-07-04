@@ -1,22 +1,38 @@
-<!-- Footer Start -->
-      <div class="col-md-12 page-body margin-top-50 footer">
-        <footer>
-        <ul class="menu-link">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="work.html">Work</a></li>
-              <li><a href="contact.html">Contact</a></li>
-          </ul>
-          
-        <p>© Copyright 2016 DevBlog. All rights reserved</p>
-
-
-<!-- UiPasta Credit Start -->
-        <div class="uipasta-credit">Design By <a href="http://www.uipasta.com" target="_blank">UiPasta</a></div>
-        <!-- UiPasta Credit End -->
-
-          
-        </footer>
+<!-- Footer-->
+<footer class="border-top">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item">
+            <a href="#!">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x" />
+                <i class="fab fa-twitter fa-stack-1x fa-inverse" />
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x" />
+                <i class="fab fa-facebook-f fa-stack-1x fa-inverse" />
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x" />
+                <i class="fab fa-github fa-stack-1x fa-inverse" />
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div class="small text-center text-muted fst-italic my-2">
+          Copyright &copy; DevKal 2021
+        </div>
       </div>
-      <!-- Footer End -->
-    
+    </div>
+  </div>
+</footer>

@@ -7,7 +7,6 @@
 
 	%sapper.base%
 
-	<link rel="stylesheet" href="global.css">
 	<link rel="stylesheet" href="font-awesome/all.min.css">
 	<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
 
@@ -22,17 +21,22 @@
 	<title>DevBlog - Personal Blog Template</title>
 	
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="images/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="/images/favicon/apple-touch-icon.png">
-	
-	<!-- All CSS Plugins -->
-	<link rel="stylesheet" type="text/css" href="/css/plugin.css">
-	
-	<!-- Main CSS Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
-	
-	<!-- Google Web Fonts  -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<title>Clean Blog - Start Bootstrap Theme</title>
+
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs-themes@1.0.0/monokai_sublime.css">
+	<!-- Font Awesome icons (free version)-->
+	<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+	<!-- Google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+	<!-- Core theme CSS (includes Bootstrap)-->
+	<link href="css/styles.css" rel="stylesheet" />
 	
 	<!-- Template Main CSS File -->
 	<link href="/css/style.css" rel="stylesheet">
@@ -76,12 +80,25 @@
     
     
     <!-- All Javascript Plugins  -->
-	<script type="text/javascript" src="/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/js/plugin.js"></script>
-	
-	<!-- Main Javascript File  -->
-	<script type="text/javascript" src="/js/scripts.js"></script>
+	<!-- <script type="text/javascript" src="/js/jquery.min.js"></script> -->
+	<!-- Bootstrap core JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/languages/go.min.js"></script>
+	<script>
+		const renderer = {
+		  code (code, language) {
+		    return `<pre><code class="hljs ${language}">${hljs.highlight(language, code).value}</code></pre>`
+		  }
+		}
 
+		marked.use({ renderer })
+	</script>
+	<script>hljs.initHighlightingOnLoad();</script>
     
    </body>
  </html>

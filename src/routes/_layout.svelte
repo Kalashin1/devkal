@@ -1,7 +1,6 @@
 <script>
+	import Navbar from '../components/Navbar.svelte'
 	import Footer from "../components/Footer.svelte"
-	import Preloader from "../components/Preloader.svelte"
-	import AboutSection from "../components/About-section.svelte"
 	// export let segment;
 </script>
 
@@ -12,14 +11,8 @@
 
 
 <main>
-	<Preloader />
-	<div id="main">
-		<div class="container">
-			<div class="row">
-				<AboutSection />
-				<slot></slot>
-			</div>
-		</div>
-	</div>
+	<Navbar />
+	<slot></slot>
+	<Footer />
 </main>
 
