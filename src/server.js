@@ -5,8 +5,10 @@ import compression from 'compression';
 import * as sapper from '@sapper/server';
 import { json } from 'body-parser'
 
-const { PORT, NODE_ENV } = process.env;
-const dev = NODE_ENV === 'development';
+const { NODE_ENV } = process.env;
+const dev = NODE_ENV === 'production';
+
+const PORT = 3000
 
 const app = express()
 
