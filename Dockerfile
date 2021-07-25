@@ -15,6 +15,6 @@ ENV PORT=3000
 
 EXPOSE 3000
 
-CMD [ "npm", "run build" ]
+CMD [ "npm", "build" ]
 
 CMD [ "node", "__sapper__/build" ]
