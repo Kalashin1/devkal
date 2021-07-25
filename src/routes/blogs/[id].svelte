@@ -1,5 +1,5 @@
 <script context="module">
-  import 'highlight.js/styles/Base16/Dracula.css'
+  import 'highlight.js/styles/Monokai'
   import hljs from'highlight.js'
   import marked from 'marked'
 
