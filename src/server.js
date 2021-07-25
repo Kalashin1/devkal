@@ -5,7 +5,7 @@ import compression from 'compression';
 import * as sapper from '@sapper/server';
 import { json } from 'body-parser'
 
-const dev = 'production';
+const dev = false;
 
 const PORT = 3000
 
