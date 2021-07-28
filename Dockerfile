@@ -15,6 +15,4 @@ ENV PORT=3000
 
 EXPOSE 3000
 
-RUN npm run build
-
-CMD [ "node", "__sapper__/build" ]
+RUN npm run dev
